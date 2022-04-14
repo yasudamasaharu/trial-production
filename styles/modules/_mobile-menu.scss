@@ -1,0 +1,82 @@
+#mobile-menu {
+  width: 100%;
+  height: 100vh;
+  background-color: $mobileMenuBgC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 62px;
+    height: 62px;
+    // padding: 15px;
+    background-color: rgb(235, 229, 229);
+    border-radius: 2px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    z-index: 99;
+    border: none;
+
+    & > span {
+      display: block;
+      width: calc(100% - 28px);
+      height: 2px;
+      background-color: $mobileMenuBtnColor;
+      margin-top: 14px;
+      transition: transform 0.5s;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.active {
+      & > span {
+        &:nth-child(1) {
+          transform: translateY(17px) rotate(135deg);
+        }
+
+        &:nth-child(2) {
+          transform: translateX(-19px) scaleX(0);
+        }
+
+        &:last-child {
+          transform: translateY(-15px) rotate(-135deg);
+        }
+      }
+    }
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  &__container {
+    width: 100%;
+    height: 100%;
+    padding-top: 33%;
+
+    .mobile-menu__navi {
+      &__ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__li {
+        padding-top: 30px;
+        color: $mobileMenuLiColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/vendors/destyle.min.css">
+  <link rel="stylesheet" href="styles/vendors/swiper.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+  <header id="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="/">〇〇保険</a>
+      </h1>
+      <nav class="header__navi">
+        <div class="header__pc-navi">
+          <div class="header__pc-navi__container">
+            <div class="header__pc-navi left">
+              <ul class="header__pc-navi__ul">
+                <li class="header__pc-navi__li">よくあるご質問</li>
+                <li class="header__pc-navi__li">採用情報</li>
+              </ul>
+              <a href="tel:0776-00-0000" class="tel">0776-00-0000</a>
+            </div>
+            <div class="header__pc-navi right">
+              <a href="" class="accident">事故のご連絡</a>
+              <a href="" class="contact">お問い合わせ</a>
+            </div>
+          </div> 
+        </div>
+      </nav>
+    </div>
+    <!-- <div class="header__form">
+      <form action="">
+        <label for="search">検索</label>
+        <div class="header__form__search">
+          <input type="text"size="" title="サイト内検索"placeholder="検索キーワード入力">
+        </div>
+      </form>
+    </div> -->
+  </header>
+
+  <main id="main">
+    <div class="hero">
+      <div class="swiper-container main-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/swipers/slider-1.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="test.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- <div class="hero-search">
+        <input type="text" class="helo-search__input" size="20" placeholder=""検索キーワードを入力してください。>
+        <div class="hero-search__inner">
+          <button class="hero-search__btn">検索</button>
+        </div>
+      </div> -->
+      <div class="hero-navi">
+        <ul class="hero-navi__ul">
+          <li class="hero-navi__li">
+            <a href="">
+              <span>
+                <span class="hero-navi__li__icon contract"></span>
+                <span class="hero-navi__li__text">ご契約者さま</span>
+              </span>
+            </a>
+          </li>
+          <li class="hero-navi__li">
+            <a href="">
+              <span>
+                <span class="hero-navi__li__icon customers"></span>
+                <span class="hero-navi__li__text">保険をお考えのお客さま</span>
+              </span>
+            </a>
+          </li>
+          <li class="hero-navi__li">
+            <a href="">
+              <span>
+                <span class="hero-navi__li__icon corporation"></span>
+                <span class="hero-navi__li__text">法人のお客さま</span>
+              </span>
+            </a>
+          </li>
+          <li class="hero-navi__li">
+            <a href="">
+              <span>
+                <span class="hero-navi__li__icon lifeplanner"></span>
+                <span class="hero-navi__li__text">ライフプランナーとは</span>
+              </span>
+            </a>
+          </li>
+          <li class="hero-navi__li">
+            <a href="">
+              <span>
+                <span class="hero-navi__li__icon corporate"></span>
+                <span class="hero-navi__li__text">企業情報</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="important-news">
+      <div class="important-news__header">
+        <h2 class="important-news__title">重要なお知らせ</h2>
+      </div>
+      <div class="important-news__body">
+        <ul class="important-news__ul">
+          <li class="important-news__li">
+            <a href="#">新型コロナウイルス感染症に罹患されたお客様</a>
+          </li>
+          <li class="important-news__li">
+            <a href="#">詐欺などの金融犯罪にご注意ください</a>
+          </li>
+          <li class="important-news__li">
+            <a href="#">災害救助法適用の特別お取り扱いについて</a>
+          </li>
+          <li class="important-news__li">
+            <a href="#">当社の社員や代理店・グループ企業等を名乗るものが金員を詐取する事案にご注意ください</a>
+          </li>
+        </ul>
+      </div>
+      <!-- __bodyクラスを後からリファクタリング -->
+      <div class="important-news__body">
+        <h4 class="important-news__subTitle">
+          Web約款
+        </h4>
+        <ul class="important-news__ul">
+          <li class="important-news__li">
+            <a href="">Web約款（ご契約のしおり・約款）はこちらからご確認ください。</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="product-feature">
+      <div class="product-feature__inner">
+        <div class="product-feature__header">
+          <h2 class="product-feature__title">・・・保険の特徴</h2>
+          <p class="product-feature__text">◯◯保険はお客様にふさわしい保障のみを選定し<br class="low-768">無駄のない保障プランをご提案します。</p>
+        </div>
+        <div class="product-feature__body">
+          <div class="product-feature__item">
+            <div class="product-feature__icon">
+              <span>1</span>
+            </div>
+            <h3 class="product-feature__item__title">ご相談の<br>お申し込み</h3>
+            <ul class="product-feature__item__ul">
+              <li class="product-feature__item__li">ご相談の流れ</li>
+              <li class="product-feature__item__li">ご相談お申し込み</li>
+            </ul>
+          </div>
+          <div class="product-feature__item">
+            <div class="product-feature__icon">
+              <span>2</span>
+            </div>
+            <h3 class="product-feature__item__title">ライフプランナー<br>よりご連絡</h3>
+            <ul class="product-feature__item__ul">
+              <li class="product-feature__item__li">ライフプランナーを知る</li>
+            </ul>
+          </div>
+          <div class="product-feature__item">
+            <div class="product-feature__icon">
+              <span>3</span>
+            </div>
+            <h3 class="product-feature__item__title">保険のご相談・<br>ライフプランニング</h3>
+            <ul class="product-feature__item__ul">
+              <li class="product-feature__item__li">ライフプランニング</li>
+              <li class="product-feature__item__li">実際のご相談の様子</li>
+            </ul>
+          </div>
+          <div class="product-feature__item">
+            <div class="product-feature__icon">
+              <span>4</span>
+            </div>
+            <h3 class="product-feature__item__title">保険のご契約</h3>
+            <ul class="product-feature__item__ul">
+              <li class="product-feature__item__li">保険商品一覧</li>
+            </ul>
+          </div>
+          <div class="product-feature__item">
+            <div class="product-feature__icon">
+              <span>5</span>
+            </div>
+            <h3 class="product-feature__item__title">ご契約後も一生涯サポート</h3>
+            <ul class="product-feature__item__ul">
+              <li class="product-feature__item__li">コンサルティングフォロー</li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-feature__cta">
+          <h4 class="product-feature__cta__title">お気軽にご相談ください。</h4>
+          <div class="product-feature__cta__btn">
+            <a href="#">保険の無料相談をする</a>
+          </div>
+          <ul class="product-feature__cta__ul">
+            <li class="product-feature__cta__li">お客様のご希望の時間・場所でご相談だけでも承ります。</li>
+            <li class="product-feature__cta__li">お会いする前に電話・メールでご連絡いたします。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="lifeplanner">
+      <div class="lifeplanner__header">
+        <h3 class="lifeplanner__title">・・・生命を知るにはまず<br class="low-900">ライフプランナーから</h3>
+        <span class="lifeplanner__title__en">KNOW LIFEPLANNER</span>
+      </div>
+      <div class="lifeplanner__body">
+        <ul class="lifeplanner__ul">
+          <li class="lifeplanner__li wide">
+            <div class="lifeplanner__li__item" data-img-cover="cover">
+              <a href="">
+                <img src="images/lifeplanner/lifeplanners.png" alt="当社のライフプランナー">
+                <span class="lifeplanner__li__title__wrap">
+                  <span class="lifeplanner__li__title__en">LIFEPLANNER</span>
+                  <span class="lifeplanner__li__title__ja">ライフプランナーとは</span>
+                </span>
+              </a>
+            </div>
+          </li>
+          <li class="lifeplanner__li">
+            <div class="lifeplanner__li__item" data-img-cover="cover">
+              <a href="">
+                <img src="images/lifeplanner/consulting1.jpg" alt="実際に相談している様子">
+                <span class="lifeplanner__li__title__wrap">
+                  <span class="lifeplanner__li__title__en">CONSULTING PREVIEW</span>
+                  <span class="lifeplanner__li__title__ja">実際のご相談の様子</span>
+                </span>
+              </a>
+            </div>
+          </li>
+          <li class="lifeplanner__li">
+            <div class="lifeplanner__li__item" data-img-cover="cover">
+              <a href="">
+                <img src="images/lifeplanner/familly.png" alt="ご契約のご家族方">
+                <span class="lifeplanner__li__title__wrap">
+                  <span class="lifeplanner__li__title__en">VOICE</span>
+                  <span class="lifeplanner__li__title__ja">お客様の声</span>
+                </span>
+              </a>
+            </div>
+          </li>
+          <li class="lifeplanner__li">
+            <div class="lifeplanner__li__item" data-img-cover="cover">
+              <a href="">
+                <img src="images/lifeplanner/consulting1.png" alt="実際のライフプランニングの様子">
+                <span class="lifeplanner__li__title__wrap">
+                  <span class="lifeplanner__li__title__en">LIFEPLANNING</span>
+                  <span class="lifeplanner__li__title__ja">ライフプランニング</span>
+                </span>
+              </a>
+            </div>
+          </li>
+          <li class="lifeplanner__li">
+            <div class="lifeplanner__li__item" data-img-cover="cover">
+              <a href="">
+                <img src="images/lifeplanner/consulting-follow.png" alt="コンサルティングの様子">
+                <span class="lifeplanner__li__title__wrap">
+                  <span class="lifeplanner__li__title__en">CONSULTING FOLLOW</span>
+                  <span class="lifeplanner__li__title__ja">コンサルティングフォロー</span>
+                </span>
+              </a>
+            </div>
+          </li>
+          <li class="lifeplanner__li wide">
+            <div class="lifeplanner__li__item" data-img-cover="cover">
+              <a href="">
+                <img src="images/lifeplanner/lifeplanner.jpg" alt="当社のライフプランナー" >
+                <span class="lifeplanner__li__title__wrap">
+                  <span class="lifeplanner__li__title__en">INTERVIEW</span>
+                  <span class="lifeplanner__li__title__ja">ライフプランナーインタビュー</span>
+                </span>
+              </a>
+            </div>
+          </li>
+          
+          <div class="lifeplanner__btn">
+            <a href="#">ライフプランナーを知る</a>
+          </div>
+        </ul>
+      </div>
+    </section>
+    <section class="recommend">
+      <div class="recommend__header">
+        <h2 class="recommend__title">おすすめコンテンツ・キャンペーン</h2>
+        <span class="recommend__title__en">RECOMMEND</span>
+      </div>
+      <div class="recommend__body">
+        <ul class="recommend__ul">
+          <li class="recommend__li">
+            <a href="">
+            <div class="recommend__item">
+              <div class="recommend__item__img" data-img-cover = "cover">
+                <img src="images/recommend/yakkan1.png" alt=""></img>
+              </div>
+              <h4 class="recommend__item__title">Web約款</h4>
+              <p class="recommend__item__text">「ご契約のしおり・約款」のWeb版はこちら</p>
+            </div>
+            </a>
+          </li>
+          <!-- <li class="recommend__li">
+            <a href="">
+            <div class="recommend__item">
+              <div class="recommend__item__img" data-img-cover = "cover">
+                <img src="" alt=""></img>
+              </div>
+              <h4 class="recommend__item__title">新規登録キャンペーン</h4>
+              <p class="recommend__item__text">お客さまWEBサービス・・・・保険アプリ　新規登録で抽選でカタログギフトをプレゼント</p>
+            </div>
+            </a>
+          </li> -->
+
+          <!-- <li class="recommend__li">
+            <a href="">
+            <div class="recommend__item">
+              <div class="recommend__item__img" data-img-cover = "cover">
+                <img src="" alt=""></img>
+              </div>
+              <h4 class="recommend__item__title">学資保険相談</h4>
+              <p class="recommend__item__text">学資保険の無料相談で300名様に素敵な商品が当たる!</p>
+            </div>
+            </a>
+          </li> -->
+
+          <li class="recommend__li">
+            <a href="">
+            <div class="recommend__item">
+              <div class="recommend__item__img" data-img-cover = "cover">
+                <img src="images/recommend/soudan.png" alt=""></img>
+              </div>
+              <h4 class="recommend__item__title">保険のご相談</h4>
+              <p class="recommend__item__text">保険の無料ご相談はこちらから</p>
+            </div>
+            </a>
+          </li>
+
+          <li class="recommend__li">
+            <a href="">
+            <div class="recommend__item">
+              <div class="recommend__item__img" data-img-cover = "cover">
+                <img src="images/recommend/henngaku.png" alt=""></img>
+              </div>
+              <h4 class="recommend__item__title">変額個人年金(無配当)</h4>
+              <p class="recommend__item__text">豊かなシニアライフに備え、老後の資金をご準備いただけます。</p>
+            </div>
+            </a>
+          </li>
+
+          <li class="recommend__li">
+            <a href="">
+            <div class="recommend__item">
+              <div class="recommend__item__img" data-img-cover = "cover">
+                <img src="images/recommend/familly.png" alt=""></img>
+              </div>
+              <h4 class="recommend__item__title">健康・医療総合サイト</h4>
+              <p class="recommend__item__text">健康・医療・介護に関するお役立ち情報をご覧いただけます。</p>
+            </div>
+            </a>
+          </li>
+
+          <li class="recommend__li">
+            <a href="">
+            <div class="recommend__item">
+              <div class="recommend__item__img" data-img-cover = "cover">
+                <img src="images/recommend/recruit.png" alt="" ></img>
+              </div>
+              <h4 class="recommend__item__title">新卒採用情報</h4>
+              <p class="recommend__item__text">新卒採用特設サイトはこちら</p>
+            </div>
+            </a>
+          </li>
+
+          <li class="recommend__li">
+            <a href="">
+            <div class="recommend__item">
+              <div class="recommend__item__img" data-img-cover = "cover">
+                <img src="test-banner.png" alt="" ></img>
+              </div>
+              <h4 class="recommend__item__title">ほけんの選び方</h4>
+              <p class="recommend__item__text">よくわかる保険情報サイト。はじめてのかたでも基礎知識から選び方までわかりやすくご紹介しています。</p>
+            </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>    
+
+    <section class="useful-info">
+      <div class="useful-info__container">
+        <h2 class="useful-info__title">お役立ち情報</h2>
+        <div class="swiper-container sub-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="">
+                <div class="useful-info__item">
+                  <div class="useful-info__item__img-container">
+                    <img src="images/useful/family.jpg" alt="家族の集合写真">
+                  </div>
+                  <h4 class="useful-info__item__title">ご家族情報登録制度</h4>
+                  <p class="useful-info__item__text">あなたの保険をご家族と共有!制度の概要や登録方法はこちら</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="useful-info__item">
+                  <div class="useful-info__item__img-container">
+                    <img src="images/useful/lifeplanner.png" alt="ライフプランナー">
+                  </div>
+                  <h4 class="useful-info__item__title">ライフプランナー採用情報</h4>
+                  <p class="useful-info__item__text">ライフプランナー採用サイトはこちら</p>
+                </div>
+              </a>
+            </div>
+              
+            <div class="swiper-slide">
+              <a href="">
+                <div class="useful-info__item">
+                  <div class="useful-info__item__img-container">
+                    <img src="images/useful/seminar.png" alt="セミナーの様子">
+                  </div>
+                  <h4 class="useful-info__item__title">セミナー・イベント情報</h4>
+                  <p class="useful-info__item__text">生命保険やライフイベントに合わせた各種セミナー実施中!</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="useful-info__item">
+                  <div class="useful-info__item__img-container">
+                    <img src="images/useful/old-couple.png" alt="老夫婦">
+                  </div>
+                  <h4 class="useful-info__item__title">確定拠出年金(401k)</h4>
+                  <p class="useful-info__item__text">・・生命保険の確定拠出年金(401k)のご案内</p>
+                </div>
+              </a>
+            </div>
+            <a href="">
+            </a>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="useful-info__item">
+                  <div class="useful-info__item__img-container">
+                    <img src="images/useful/heart-gift.png" alt="大切な人に贈るもの">
+                  </div>
+                  <h4 class="useful-info__item__title">生命保険信託</h4>
+                  <p class="useful-info__item__text">信託の仕組みを活用した保険金支払いの新しい選択肢をご紹介</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="">
+                <div class="useful-info__item">
+                  <div class="useful-info__item__img-container">
+                    <img src="images/useful/agency.png" alt="代理店の社員">
+                  </div>
+                  <h4 class="useful-info__item__title">プレミア・エージェンシー</h4>
+                  <p class="useful-info__item__text">プレミア・エージェンシーは・・生命から独立した専属代理店です</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="news__body">
+        <ul class="news-tab__ul">
+          <li class="news-tab__li">
+            <a href="" class="news-tab__item">お知らせ</a>
+          </li>
+          <li class="news-tab__li">
+            <a href="" class="news-tab__item">ニュースリリース</a>
+          </li>
+        </ul>
+        <ul class="news-item__ul">
+          <li class="news-item__li">
+            <time class="news-item__li__time">2022年3月14日</time>
+            <p class="news-item__li__text">当社における新型コロナウイルス感染者の発生について</p>
+          </li>
+          <li class="news-item__li">
+            <time class="news-item__li__time">2022年3月10日</time>
+            <p class="news-item__li__text">システムメンテナンスのお知らせ</p>
+          </li>
+          <li class="news-item__li">
+            <time class="news-item__li__time">2022年2月28日</time>
+            <p class="news-item__li__text">2021年度第3四半期の「保険金・給付金のお支払い状況」について</p>
+          </li>
+          <div class="news-item__caution">
+            <p class="news-item__caution__title">ご注意ください</p>
+            <ul class="news-item__caution__ul">
+              <li class="news-item__caution__li">当社を偽装した不振メールや不審サイトにご注意ください。</li>
+              <li class="news-item__caution__li">当社の社員や代理店・グループ企業等を名乗る者が金員を詐取する事案にご注意ください</li>
+            </ul>
+          </div>
+          <a href=""class="news-item__allview">一覧</a>
+        </ul>
+        <ul class="news-item__ul">
+          <li class="news-item__li">
+            <time class="news-item__li__time">2022年3月8日</time>
+            <p class="news-item__li__text">子供の教育資金に関する調査2022</p>
+          </li>
+          <li class="news-item__li">
+            <time class="news-item__li__time">2022年3月3日</time>
+            <p class="news-item__li__text">「DX認定事業者」の認定取得について</p>
+          </li>
+          <li class="news-item__li">
+            <time class="news-item__li__time">2022年3月1日</time>
+            <p class="news-item__li__text">人事異動について</p>
+          </li>
+          <a href="" class="news-item__allview">一覧</a>
+        </ul>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer__body">
+      <div class="footer__inner">
+        <ul class="footer__left-ul">
+          <li class="footer__left-li">
+            <a href="">当社の勧誘方針</a>
+          </li>
+          <li class="footer__left-li">
+            <a href="">プライバシーポリシー</a>
+          </li>
+          <li class="footer__left-li">
+            <a href="">利益相反管理方針の概要</a>
+          </li>
+          <li class="footer__left-li">
+            <a href="">ホームページのご利用について</a>
+          </li>
+          <li class="footer__left-li">
+            <a href="">代理業の各種取り扱いについて</a>
+          </li>
+          <li class="footer__left-li">
+            <a href="">取引時確認について</a>
+          </li>
+          <li class="footer__left-li">
+            <a href="">生命保険契約者保護機構について</a>
+          </li>
+        </ul>
+        <ul class="footer__right-ul">
+          <li class="footer__right-li">
+            <a href="">生命保険の契約にあたっての手引</a>
+          </li>
+          <li class="footer__right-li">
+            <a href="">お問い合わせ</a>
+          </li>
+          <li class="footer__right-li">
+            <a href="">保険金・給付金の請求から受取までの手引き</a>
+          </li>
+          <li class="footer__right-li">
+            <a href="">指定紛争解決機関(指定ADR機関)について</a>
+          </li>
+          <li class="footer__right-li">
+            <a href="">セキュリティー情報</a>
+          </li>
+          <li class="footer__right-li">
+            <a href="">サイトマップ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      &copy; ・・・保険
+    </div>
+  </footer>
+
+  <div id="mobile-menu">
+    <h2 class="mobile-menu__title">ーーー保険</h2>
+    <p class="mobile-menu__text">モバイルテキスト</p>
+    <div class="mobile-menu__container">
+      <ul class="mobile-menu__navi__ul">
+        <li class="mobile-menu__navi__li">よくあるご質問</li>
+        <li class="mobile-menu__navi__li">お問い合わせ</li>
+        <li class="mobile-menu__navi__li">採用情報</li>
+      </ul>
+    </div>
+  </div>
+  <button id="mobile-menu__btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  </div>
+  <!-- <script src="scrollEdit.js"></script> -->
+  <!-- <script src="scripts/mobile-menu.js"></script> -->
+  <script src="scripts/modules/newsToggle.js"></script> 
+  <script src="scripts/modules/icons.js"></script> 
+  <script src="scripts/modules/img-hover.js"></script>
+  <script src="scripts/modules/hoverEvent.js"></script>
+  <script src="scripts/modules/events-clear.js"></script> 
+  <script src="scripts/vendors/swiper.min.js"></script>
+  <script src="scripts/modules/slider.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+

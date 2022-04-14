@@ -1,0 +1,57 @@
+// コンテンツの最大幅
+$contentsWidth: 1280px;
+
+// 要素の間隔
+$contentMargin: 80px;
+
+//フォント装飾
+// $baseFont: ;
+// $titleFont: ;
+
+$cRed: #f00;
+$iconColor: #0f0;
+
+$paginationColor: rgb(160, 157, 157);
+// $Bgc: #;
+$coverColor: rgba(0, 0, 0, 0.3);
+
+// ハンバーガーメニューの装飾
+$mobileMenuBtnColor: rgb(39, 37, 37);
+$mobileMenuBgC: rgb(255, 255, 255);
+$mobileMenuLiColor: rgb(90, 90, 90);
+
+$ffIcon: 'Font Awesome 5 Free';
+
+$lifeplannerImgSize: calc(50vw - 2px);
+$lifeplannerImgSize-l: calc(100vw - 4px);
+
+//ここからMixIn/////
+@mixin sectionTitle {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+
+    &__en {
+      font-size: 0.9em;
+      color: lightgreen;
+    }
+  }
+}
+
+@mixin icon-style {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 600;
+  position: absolute;
+}

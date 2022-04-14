@@ -1,0 +1,28 @@
+/* ライフプランナーのコンテンツ内の画像をimgタグじゃなく背景画像で画像を表示されるときのコード
+
+ // &:first-child {
+    //   @include bgimg(url(../../images/lifeplanner/lifeplanners.png));
+    // }
+
+    // &:nth-child(2) {
+    //   @include bgimg(url(../../images/lifeplanner/consulting1.jpg));
+    // }
+
+    // &:nth-child(3) {
+    //   @include bgimg(url(../../images/lifeplanner/familly.png));
+    // }
+
+    // &:nth-child(4) {
+    //   @include bgimg(url(../../images/lifeplanner/consulting1.png));
+    // }
+
+    // &:nth-child(5) {
+    //   @include bgimg(url(../../images/lifeplanner/consulting-follow.png));
+    // }
+
+    // &:nth-child(6) {
+    //   @include bgimg(url(../../images/lifeplanner/lifeplanner.jpg));
+    //   margin-right: 0;
+    // }
+
+/////////　ここまでがライフプランナーのコンテンツ画像のコード	/////////// */
